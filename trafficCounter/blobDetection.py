@@ -384,7 +384,7 @@ while ret:
         outblob.write(threshout)
         
         # Find contours aka blobs in the threshold image.
-        _, contours, hierarchy = cv2.findContours(thresholdImage, 
+        contours, hierarchy = cv2.findContours(thresholdImage, 
                                                   cv2.RETR_EXTERNAL, 
                                                   cv2.CHAIN_APPROX_SIMPLE)
         
